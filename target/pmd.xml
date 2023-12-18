@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.0.2" timestamp="2013-06-07T08:01:04.058">
+<file name="C:\projetos\WS\teste\processadorAlertas\src\main\java\org\example\processadorAlertas\Processador.java">
+<violation beginline="16" endline="16" begincolumn="1" endcolumn="37" rule="UnusedImports" ruleset="Import Statements" package="org.example.processadorAlertas" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.0.2/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'java.io.FileNotFoundException'
+</violation>
+<violation beginline="25" endline="25" begincolumn="1" endcolumn="26" rule="UnusedImports" ruleset="Import Statements" package="org.example.processadorAlertas" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.0.2/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'java.util.TimeZone'
+</violation>
+<violation beginline="120" endline="120" begincolumn="67" endcolumn="67" rule="EmptyStatementNotInLoop" ruleset="Empty Code" package="org.example.processadorAlertas" class="Processador" method="actionPerformed" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.0.2/rules/java/empty.html#EmptyStatementNotInLoop" priority="3">
+An empty statement (semicolon) not part of a loop
+</violation>
+<violation beginline="254" endline="254" begincolumn="66" endcolumn="73" rule="UnusedLocalVariable" ruleset="Unused Code" package="org.example.processadorAlertas" class="Processador" method="processarTag" variable="calendar" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.0.2/rules/java/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'calendar'.
+</violation>
+</file>
+</pmd>

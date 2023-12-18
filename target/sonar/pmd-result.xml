@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="4.2.5" timestamp="2012-11-22T10:50:42.645">
+<file name="C:\Users\55018335734\Downloads\processadorAlertas\src\main\java\org\example\processadorAlertas\Processador.java">
+<violation beginline="53" endline="53" begincolumn="17" endcolumn="30" rule="SingularField" ruleset="Design Rules" package="org.example.processadorAlertas" class="Processador" variable="db" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SingularField" priority="4">
+Perhaps 'db' could be replaced by a local variable.
+</violation>
+<violation beginline="128" endline="203" begincolumn="17" endcolumn="9" rule="NcssMethodCount" ruleset="Code Size Rules" package="org.example.processadorAlertas" class="Processador" externalInfoUrl="http://pmd.sourceforge.net/rules/codesize.html#NcssMethodCount" priority="3">
+The method processarXML() has an NCSS line count of 53
+</violation>
+<violation beginline="200" endline="200" begincolumn="33" endcolumn="52" rule="AvoidPrintStackTrace" ruleset="Java Logging Rules" package="org.example.processadorAlertas" class="Processador" method="processarXML" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#AvoidPrintStackTrace" priority="3">
+Avoid printStackTrace(); use a logger call instead.
+</violation>
+<violation beginline="205" endline="327" begincolumn="17" endcolumn="9" rule="NcssMethodCount" ruleset="Code Size Rules" package="org.example.processadorAlertas" class="Processador" externalInfoUrl="http://pmd.sourceforge.net/rules/codesize.html#NcssMethodCount" priority="3">
+The method processarTag() has an NCSS line count of 83
+</violation>
+<violation beginline="211" endline="211" begincolumn="49" endcolumn="62" rule="AvoidDuplicateLiterals" ruleset="String and StringBuffer Rules" package="org.example.processadorAlertas" class="Processador" method="processarTag" externalInfoUrl="http://pmd.sourceforge.net/rules/strings.html#AvoidDuplicateLiterals" priority="3">
+The String literal &quot;listaAlertas&quot; appears 4 times in this file; the first occurrence is on line 211
+</violation>
+<violation beginline="222" endline="222" begincolumn="57" endcolumn="76" rule="AvoidDuplicateLiterals" ruleset="String and StringBuffer Rules" package="org.example.processadorAlertas" class="Processador" method="processarTag" externalInfoUrl="http://pmd.sourceforge.net/rules/strings.html#AvoidDuplicateLiterals" priority="3">
+The String literal &quot;idItemConfiguracao&quot; appears 5 times in this file; the first occurrence is on line 222
+</violation>
+<violation beginline="239" endline="239" begincolumn="65" endcolumn="82" rule="AvoidDuplicateLiterals" ruleset="String and StringBuffer Rules" package="org.example.processadorAlertas" class="Processador" method="processarTag" externalInfoUrl="http://pmd.sourceforge.net/rules/strings.html#AvoidDuplicateLiterals" priority="3">
+The String literal &quot;dataHoraRegistro&quot; appears 5 times in this file; the first occurrence is on line 239
+</violation>
+<violation beginline="246" endline="246" begincolumn="66" endcolumn="73" rule="UnusedLocalVariable" ruleset="Unused Code Rules" package="org.example.processadorAlertas" class="Processador" method="processarTag" variable="calendar" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'calendar'.
+</violation>
+<violation beginline="248" endline="248" begincolumn="56" endcolumn="64" rule="ExceptionAsFlowControl" ruleset="Strict Exception Rules" package="org.example.processadorAlertas" class="Processador" method="processarTag" externalInfoUrl="http://pmd.sourceforge.net/rules/strictexception.html#ExceptionAsFlowControl" priority="3">
+Avoid using exceptions as flow control.
+</violation>
+<violation beginline="249" endline="249" begincolumn="57" endcolumn="84" rule="PreserveStackTrace" ruleset="Design Rules" package="org.example.processadorAlertas" class="Processador" method="processarTag" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#PreserveStackTrace" priority="3">
+New exception is thrown in catch block, original stack trace may be lost
+</violation>
+<violation beginline="316" endline="316" begincolumn="24" endcolumn="32" rule="ExceptionAsFlowControl" ruleset="Strict Exception Rules" package="org.example.processadorAlertas" class="Processador" method="processarTag" externalInfoUrl="http://pmd.sourceforge.net/rules/strictexception.html#ExceptionAsFlowControl" priority="3">
+Avoid using exceptions as flow control.
+</violation>
+<violation beginline="323" endline="323" begincolumn="33" endcolumn="51" rule="AvoidPrintStackTrace" ruleset="Java Logging Rules" package="org.example.processadorAlertas" class="Processador" method="processarTag" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#AvoidPrintStackTrace" priority="3">
+Avoid printStackTrace(); use a logger call instead.
+</violation>
+</file>
+</pmd>

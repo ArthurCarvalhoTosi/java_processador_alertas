@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://findbugs.sourceforge.net/xsl/default.xsl"?>
+
+<BugCollection version="1.3.9" sequence="0" timestamp="1353588599812" analysisTimestamp="1353588638219" release="">
+  <Project>
+    <Jar>C:\Users\55018335734\Downloads\processadorAlertas\target\classes</Jar>
+    <AuxClasspathEntry>C:\Users\55018335734\.m2\repository\org\hsqldb\hsqldb\2.2.9\hsqldb-2.2.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\550183~1\AppData\Local\Temp\findbugs4620945224365692828.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\550183~1\AppData\Local\Temp\findbugs6169172037644474657.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\55018335734\Downloads\processadorAlertas\src\main\java</SrcDir>
+    <WrkDir>C:\Users\55018335734\Downloads\processadorAlertas\target</WrkDir>
+  </Project>
+  <BugInstance type="BC_UNCONFIRMED_CAST" priority="3" abbrev="BC" category="STYLE" instanceHash="dbdbc0bb19385c91aa2e7bf3410a6b0d" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Unchecked/unconfirmed cast</ShortMessage>
+    <LongMessage>Unchecked/unconfirmed cast from java.awt.Graphics to java.awt.Graphics2D in org.example.processadorAlertas.Processador.print(Graphics, PageFormat, int)</LongMessage>
+    <Class classname="org.example.processadorAlertas.Processador" primary="true">
+      <SourceLine classname="org.example.processadorAlertas.Processador" start="42" end="352" sourcefile="Processador.java" sourcepath="org/example/processadorAlertas/Processador.java" relSourcepath="org\example\processadorAlertas\Processador.java">
+        <Message>At Processador.java:[lines 42-352]</Message>
+      </SourceLine>
+      <Message>In class org.example.processadorAlertas.Processador</Message>
+    </Class>
+    <Method classname="org.example.processadorAlertas.Processador" name="print" signature="(Ljava/awt/Graphics;Ljava/awt/print/PageFormat;I)I" isStatic="false" primary="true">
+      <SourceLine classname="org.example.processadorAlertas.Processador" start="331" end="352" startBytecode="0" endBytecode="64" sourcefile="Processador.java" sourcepath="org/example/processadorAlertas/Processador.java" relSourcepath="org\example\processadorAlertas\Processador.java"/>
+      <Message>In method org.example.processadorAlertas.Processador.print(Graphics, PageFormat, int)</Message>
+    </Method>
+    <Type descriptor="Ljava/awt/Graphics;" role="TYPE_FOUND">
+      <SourceLine classname="java.awt.Graphics" start="101" end="1237" sourcefile="Graphics.java" sourcepath="java/awt/Graphics.java">
+        <Message>At Graphics.java:[lines 101-1237]</Message>
+      </SourceLine>
+      <Message>Actual type java.awt.Graphics</Message>
+    </Type>
+    <Type descriptor="Ljava/awt/Graphics2D;" role="TYPE_EXPECTED">
+      <SourceLine classname="java.awt.Graphics2D" start="404" end="489" sourcefile="Graphics2D.java" sourcepath="java/awt/Graphics2D.java">
+        <Message>At Graphics2D.java:[lines 404-489]</Message>
+      </SourceLine>
+      <Message>Expected java.awt.Graphics2D</Message>
+    </Type>
+    <LocalVariable name="g" register="1" pc="56" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from g</Message>
+    </LocalVariable>
+    <SourceLine classname="org.example.processadorAlertas.Processador" primary="true" start="342" end="342" startBytecode="57" endBytecode="57" sourcefile="Processador.java" sourcepath="org/example/processadorAlertas/Processador.java" relSourcepath="org\example\processadorAlertas\Processador.java">
+      <Message>At Processador.java:[line 342]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" abbrev="DLS" category="STYLE" instanceHash="7cad52591cda3d3a96535e3c9e6337bb" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Dead store to local variable</ShortMessage>
+    <LongMessage>Dead store to calendar in org.example.processadorAlertas.Processador.processarTag(String, String)</LongMessage>
+    <Class classname="org.example.processadorAlertas.Processador" primary="true">
+      <SourceLine classname="org.example.processadorAlertas.Processador" start="42" end="352" sourcefile="Processador.java" sourcepath="org/example/processadorAlertas/Processador.java" relSourcepath="org\example\processadorAlertas\Processador.java">
+        <Message>At Processador.java:[lines 42-352]</Message>
+      </SourceLine>
+      <Message>In class org.example.processadorAlertas.Processador</Message>
+    </Class>
+    <Method classname="org.example.processadorAlertas.Processador" name="processarTag" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="false" primary="true">
+      <SourceLine classname="org.example.processadorAlertas.Processador" start="207" end="327" startBytecode="0" endBytecode="350" sourcefile="Processador.java" sourcepath="org/example/processadorAlertas/Processador.java" relSourcepath="org\example\processadorAlertas\Processador.java"/>
+      <Message>In method org.example.processadorAlertas.Processador.processarTag(String, String)</Message>
+    </Method>
+    <LocalVariable name="calendar" register="8" pc="240" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named calendar</Message>
+    </LocalVariable>
+    <SourceLine classname="org.example.processadorAlertas.Processador" primary="true" start="246" end="246" startBytecode="238" endBytecode="238" sourcefile="Processador.java" sourcepath="org/example/processadorAlertas/Processador.java" relSourcepath="org\example\processadorAlertas\Processador.java">
+      <Message>At Processador.java:[line 246]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="calendar"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="3" abbrev="DLS" category="STYLE" instanceHash="8f6a058da3ac9a1fc982a667c020eb2b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Dead store to local variable</ShortMessage>
+    <LongMessage>Dead store to tam in org.example.processadorAlertas.Processador.processarTag(String, String)</LongMessage>
+    <Class classname="org.example.processadorAlertas.Processador" primary="true">
+      <SourceLine classname="org.example.processadorAlertas.Processador" start="42" end="352" sourcefile="Processador.java" sourcepath="org/example/processadorAlertas/Processador.java" relSourcepath="org\example\processadorAlertas\Processador.java">
+        <Message>At Processador.java:[lines 42-352]</Message>
+      </SourceLine>
+      <Message>In class org.example.processadorAlertas.Processador</Message>
+    </Class>
+    <Method classname="org.example.processadorAlertas.Processador" name="processarTag" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="false" primary="true">
+      <SourceLine classname="org.example.processadorAlertas.Processador" start="207" end="327" startBytecode="0" endBytecode="350" sourcefile="Processador.java" sourcepath="org/example/processadorAlertas/Processador.java" relSourcepath="org\example\processadorAlertas\Processador.java"/>
+      <Message>In method org.example.processadorAlertas.Processador.processarTag(String, String)</Message>
+    </Method>
+    <LocalVariable name="tam" register="5" pc="38" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named tam</Message>
+    </LocalVariable>
+    <SourceLine classname="org.example.processadorAlertas.Processador" primary="true" start="215" end="215" startBytecode="36" endBytecode="36" sourcefile="Processador.java" sourcepath="org/example/processadorAlertas/Processador.java" relSourcepath="org\example\processadorAlertas\Processador.java">
+      <Message>At Processador.java:[line 215]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="tam"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.MANY_STORES" value="true"/>
+  </BugInstance>
+  <BugInstance type="DMI_EMPTY_DB_PASSWORD" priority="2" abbrev="Dm" category="SECURITY" instanceHash="6448c04d9fe5e8ad26bb49d94d9c96ef" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Empty database password</ShortMessage>
+    <LongMessage>Empty database password in org.example.processadorAlertas.Processador.processarXML()</LongMessage>
+    <Class classname="org.example.processadorAlertas.Processador" primary="true">
+      <SourceLine classname="org.example.processadorAlertas.Processador" start="42" end="352" sourcefile="Processador.java" sourcepath="org/example/processadorAlertas/Processador.java" relSourcepath="org\example\processadorAlertas\Processador.java">
+        <Message>At Processador.java:[lines 42-352]</Message>
+      </SourceLine>
+      <Message>In class org.example.processadorAlertas.Processador</Message>
+    </Class>
+    <Method classname="org.example.processadorAlertas.Processador" name="processarXML" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.example.processadorAlertas.Processador" start="130" end="203" startBytecode="0" endBytecode="224" sourcefile="Processador.java" sourcepath="org/example/processadorAlertas/Processador.java" relSourcepath="org\example\processadorAlertas\Processador.java"/>
+      <Message>In method org.example.processadorAlertas.Processador.processarXML()</Message>
+    </Method>
+    <SourceLine classname="org.example.processadorAlertas.Processador" primary="true" start="136" end="136" startBytecode="45" endBytecode="45" sourcefile="Processador.java" sourcepath="org/example/processadorAlertas/Processador.java" relSourcepath="org\example\processadorAlertas\Processador.java">
+      <Message>At Processador.java:[line 136]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" abbrev="OS" category="BAD_PRACTICE" instanceHash="5a02806db5c37d0b4669fc75e630d51a" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to close stream</ShortMessage>
+    <LongMessage>org.example.processadorAlertas.Processador.processarXML() may fail to close stream</LongMessage>
+    <Class classname="org.example.processadorAlertas.Processador" primary="true">
+      <SourceLine classname="org.example.processadorAlertas.Processador" start="42" end="352" sourcefile="Processador.java" sourcepath="org/example/processadorAlertas/Processador.java" relSourcepath="org\example\processadorAlertas\Processador.java">
+        <Message>At Processador.java:[lines 42-352]</Message>
+      </SourceLine>
+      <Message>In class org.example.processadorAlertas.Processador</Message>
+    </Class>
+    <Method classname="org.example.processadorAlertas.Processador" name="processarXML" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.example.processadorAlertas.Processador" start="130" end="203" startBytecode="0" endBytecode="224" sourcefile="Processador.java" sourcepath="org/example/processadorAlertas/Processador.java" relSourcepath="org\example\processadorAlertas\Processador.java"/>
+      <Message>In method org.example.processadorAlertas.Processador.processarXML()</Message>
+    </Method>
+    <Type descriptor="Ljava/io/Reader;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.Reader" start="49" end="232" sourcefile="Reader.java" sourcepath="java/io/Reader.java">
+        <Message>At Reader.java:[lines 49-232]</Message>
+      </SourceLine>
+      <Message>Need to close java.io.Reader </Message>
+    </Type>
+    <SourceLine classname="org.example.processadorAlertas.Processador" primary="true" start="131" end="131" startBytecode="15" endBytecode="15" sourcefile="Processador.java" sourcepath="org/example/processadorAlertas/Processador.java" relSourcepath="org\example\processadorAlertas\Processador.java">
+      <Message>At Processador.java:[line 131]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" abbrev="REC" category="STYLE" instanceHash="4d94accac5fc167ae54418a968f49a17" instanceOccurrenceNum="0" instanceOccurrenceMax="1">
+    <ShortMessage>Exception is caught when Exception is not thrown</ShortMessage>
+    <LongMessage>Exception is caught when Exception is not thrown in org.example.processadorAlertas.Processador.processarXML()</LongMessage>
+    <Class classname="org.example.processadorAlertas.Processador" primary="true">
+      <SourceLine classname="org.example.processadorAlertas.Processador" start="42" end="352" sourcefile="Processador.java" sourcepath="org/example/processadorAlertas/Processador.java" relSourcepath="org\example\processadorAlertas\Processador.java">
+        <Message>At Processador.java:[lines 42-352]</Message>
+      </SourceLine>
+      <Message>In class org.example.processadorAlertas.Processador</Message>
+    </Class>
+    <Method classname="org.example.processadorAlertas.Processador" name="processarXML" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.example.processadorAlertas.Processador" start="130" end="203" startBytecode="0" endBytecode="922" sourcefile="Processador.java" sourcepath="org/example/processadorAlertas/Processador.java" relSourcepath="org\example\processadorAlertas\Processador.java"/>
+      <Message>In method org.example.processadorAlertas.Processador.processarXML()</Message>
+    </Method>
+    <SourceLine classname="org.example.processadorAlertas.Processador" primary="true" start="194" end="194" startBytecode="451" endBytecode="451" sourcefile="Processador.java" sourcepath="org/example/processadorAlertas/Processador.java" relSourcepath="org\example\processadorAlertas\Processador.java">
+      <Message>At Processador.java:[line 194]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="3" abbrev="REC" category="STYLE" instanceHash="4d94accac5fc167ae54418a968f49a17" instanceOccurrenceNum="1" instanceOccurrenceMax="1">
+    <ShortMessage>Exception is caught when Exception is not thrown</ShortMessage>
+    <LongMessage>Exception is caught when Exception is not thrown in org.example.processadorAlertas.Processador.processarXML()</LongMessage>
+    <Class classname="org.example.processadorAlertas.Processador" primary="true">
+      <SourceLine classname="org.example.processadorAlertas.Processador" start="42" end="352" sourcefile="Processador.java" sourcepath="org/example/processadorAlertas/Processador.java" relSourcepath="org\example\processadorAlertas\Processador.java">
+        <Message>At Processador.java:[lines 42-352]</Message>
+      </SourceLine>
+      <Message>In class org.example.processadorAlertas.Processador</Message>
+    </Class>
+    <Method classname="org.example.processadorAlertas.Processador" name="processarXML" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.example.processadorAlertas.Processador" start="130" end="203" startBytecode="0" endBytecode="922" sourcefile="Processador.java" sourcepath="org/example/processadorAlertas/Processador.java" relSourcepath="org\example\processadorAlertas\Processador.java"/>
+      <Message>In method org.example.processadorAlertas.Processador.processarXML()</Message>
+    </Method>
+    <SourceLine classname="org.example.processadorAlertas.Processador" primary="true" start="194" end="194" startBytecode="451" endBytecode="451" sourcefile="Processador.java" sourcepath="org/example/processadorAlertas/Processador.java" relSourcepath="org\example\processadorAlertas\Processador.java">
+      <Message>At Processador.java:[line 194]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE" priority="1" abbrev="SQL" category="SECURITY" instanceHash="4307bf01e710e66dd560de565b37264f" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Nonconstant string passed to execute method on an SQL statement</ShortMessage>
+    <LongMessage>Method org.example.processadorAlertas.Processador.processarTag(String, String) passes a nonconstant String to an execute method on an SQL statement</LongMessage>
+    <Class classname="org.example.processadorAlertas.Processador" primary="true">
+      <SourceLine classname="org.example.processadorAlertas.Processador" start="42" end="352" sourcefile="Processador.java" sourcepath="org/example/processadorAlertas/Processador.java" relSourcepath="org\example\processadorAlertas\Processador.java">
+        <Message>At Processador.java:[lines 42-352]</Message>
+      </SourceLine>
+      <Message>In class org.example.processadorAlertas.Processador</Message>
+    </Class>
+    <Method classname="org.example.processadorAlertas.Processador" name="processarTag" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="false" primary="true">
+      <SourceLine classname="org.example.processadorAlertas.Processador" start="207" end="327" startBytecode="0" endBytecode="350" sourcefile="Processador.java" sourcepath="org/example/processadorAlertas/Processador.java" relSourcepath="org\example\processadorAlertas\Processador.java"/>
+      <Message>In method org.example.processadorAlertas.Processador.processarTag(String, String)</Message>
+    </Method>
+    <SourceLine classname="org.example.processadorAlertas.Processador" primary="true" start="304" end="304" startBytecode="674" endBytecode="674" sourcefile="Processador.java" sourcepath="org/example/processadorAlertas/Processador.java" relSourcepath="org\example\processadorAlertas\Processador.java">
+      <Message>At Processador.java:[line 304]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy</Description>
+  </BugCategory>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="SECURITY">
+    <Description>Security</Description>
+  </BugCategory>
+  <BugPattern type="BC_UNCONFIRMED_CAST" abbrev="BC" category="STYLE">
+    <ShortDescription>Unchecked/unconfirmed cast</ShortDescription>
+    <Details><![CDATA[
+
+<p>
+This cast is unchecked, and not all instances of the type casted from can be cast to
+the type it is being cast to. Ensure that your program logic ensures that this
+cast will not fail.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DMI_EMPTY_DB_PASSWORD" abbrev="Dm" category="SECURITY" cweid="259">
+    <ShortDescription>Empty database password</ShortDescription>
+    <Details><![CDATA[
+      
+	<p>This code creates a database connect using a blank or empty password. This indicates that the database is not protected by a password. 
+</p>
+
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="OS_OPEN_STREAM" abbrev="OS" category="BAD_PRACTICE">
+    <ShortDescription>Method may fail to close stream</ShortDescription>
+    <Details><![CDATA[
+
+<p> The method creates an IO stream object, does not assign it to any
+fields, pass it to other methods that might close it, 
+or return it, and does not appear to close
+the stream on all paths out of the method.&nbsp; This may result in
+a file descriptor leak.&nbsp; It is generally a good
+idea to use a <code>finally</code> block to ensure that streams are
+closed.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE" abbrev="SQL" category="SECURITY" cweid="89">
+    <ShortDescription>Nonconstant string passed to execute method on an SQL statement</ShortDescription>
+    <Details><![CDATA[
+
+  <p>The method invokes the execute method on an SQL statement with a String that seems
+to be dynamically generated. Consider using
+a prepared statement instead. It is more efficient and less vulnerable to
+SQL injection attacks.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Dead store to local variable</ShortDescription>
+    <Details><![CDATA[
+
+<p>
+This instruction assigns a value to a local variable,
+but the value is not read or used in any subsequent instruction.
+Often, this indicates an error, because the value computed is never
+used.
+</p>
+<p>
+Note that Sun's javac compiler often generates dead stores for
+final local variables.  Because FindBugs is a bytecode-based tool,
+there is no easy way to eliminate these false positives.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="REC_CATCH_EXCEPTION" abbrev="REC" category="STYLE" cweid="396">
+    <ShortDescription>Exception is caught when Exception is not thrown</ShortDescription>
+    <Details><![CDATA[
+  
+  <p>
+  This method uses a try-catch block that catches Exception objects, but Exception is not
+  thrown within the try block, and RuntimeException is not explicitly caught.  It is a common bug pattern to
+  say try { ... } catch (Exception e) { something } as a shorthand for catching a number of types of exception
+  each of whose catch blocks is identical, but this construct also accidentally catches RuntimeException as well,
+  masking potential bugs.
+  </p>
+  
+     ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SQL">
+    <Description>Potential SQL Problem</Description>
+  </BugCode>
+  <BugCode abbrev="Dm">
+    <Description>Dubious method used</Description>
+  </BugCode>
+  <BugCode abbrev="BC">
+    <Description>Bad casts of object references</Description>
+  </BugCode>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Dead local store</Description>
+  </BugCode>
+  <BugCode abbrev="OS">
+    <Description>Stream not closed on all paths</Description>
+  </BugCode>
+  <BugCode abbrev="REC">
+    <Description>RuntimeException capture</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 22 Nov 2012 10:49:59 -0200" total_classes="1" referenced_classes="265" total_bugs="8" total_size="226" num_packages="1" vm_version="20.5-b03" cpu_seconds="2.81" clock_seconds="3.41" peak_mbytes="113.95" alloc_mbytes="989.88" gc_seconds="0.29" priority_3="3" priority_2="4" priority_1="1">
+    <FileStats path="org/example/processadorAlertas/Processador.java" bugCount="8" size="226" bugHash="1de83168334a88b08e31f6848d4e2f35"/>
+    <PackageStats package="org.example.processadorAlertas" total_bugs="8" total_types="1" total_size="226" priority_3="3" priority_2="4" priority_1="1">
+      <ClassStats class="org.example.processadorAlertas.Processador" sourceFile="Processador.java" interface="false" size="226" bugs="8" priority_3="3" priority_2="4" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="11" invocations="4" avgMicrosecondsPerInvocation="2752" maxMicrosecondsPerInvocation="3580" standardDeviationMircosecondsPerInvocation="502"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="14" invocations="7" avgMicrosecondsPerInvocation="2018" maxMicrosecondsPerInvocation="4521" standardDeviationMircosecondsPerInvocation="1588"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory" totalMilliseconds="23" invocations="16" avgMicrosecondsPerInvocation="1488" maxMicrosecondsPerInvocation="20917" standardDeviationMircosecondsPerInvocation="5017"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="28" invocations="265" avgMicrosecondsPerInvocation="108" maxMicrosecondsPerInvocation="1867" standardDeviationMircosecondsPerInvocation="212"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="28" invocations="7" avgMicrosecondsPerInvocation="4141" maxMicrosecondsPerInvocation="10936" standardDeviationMircosecondsPerInvocation="3447"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="29" invocations="7" avgMicrosecondsPerInvocation="4157" maxMicrosecondsPerInvocation="12031" standardDeviationMircosecondsPerInvocation="4424"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="29" invocations="265" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="1738" standardDeviationMircosecondsPerInvocation="209"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="31" invocations="7" avgMicrosecondsPerInvocation="4490" maxMicrosecondsPerInvocation="18213" standardDeviationMircosecondsPerInvocation="6055"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="34" invocations="265" avgMicrosecondsPerInvocation="128" maxMicrosecondsPerInvocation="2605" standardDeviationMircosecondsPerInvocation="251"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="41" invocations="7" avgMicrosecondsPerInvocation="5930" maxMicrosecondsPerInvocation="31949" standardDeviationMircosecondsPerInvocation="10726"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="42" invocations="265" avgMicrosecondsPerInvocation="159" maxMicrosecondsPerInvocation="2334" standardDeviationMircosecondsPerInvocation="313"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="48" invocations="7" avgMicrosecondsPerInvocation="6924" maxMicrosecondsPerInvocation="20326" standardDeviationMircosecondsPerInvocation="6563"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="49" invocations="7" avgMicrosecondsPerInvocation="7025" maxMicrosecondsPerInvocation="20972" standardDeviationMircosecondsPerInvocation="6696"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="53" invocations="328" avgMicrosecondsPerInvocation="163" maxMicrosecondsPerInvocation="8763" standardDeviationMircosecondsPerInvocation="699"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="58" invocations="7" avgMicrosecondsPerInvocation="8418" maxMicrosecondsPerInvocation="21123" standardDeviationMircosecondsPerInvocation="7541"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="61" invocations="265" avgMicrosecondsPerInvocation="233" maxMicrosecondsPerInvocation="5655" standardDeviationMircosecondsPerInvocation="545"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="72" invocations="9" avgMicrosecondsPerInvocation="8073" maxMicrosecondsPerInvocation="21264" standardDeviationMircosecondsPerInvocation="7363"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="93" invocations="11" avgMicrosecondsPerInvocation="8530" maxMicrosecondsPerInvocation="31208" standardDeviationMircosecondsPerInvocation="9591"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="105" invocations="265" avgMicrosecondsPerInvocation="398" maxMicrosecondsPerInvocation="5158" standardDeviationMircosecondsPerInvocation="855"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="181" invocations="5318" avgMicrosecondsPerInvocation="34" maxMicrosecondsPerInvocation="2254" standardDeviationMircosecondsPerInvocation="69"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="223" invocations="1267" avgMicrosecondsPerInvocation="176" maxMicrosecondsPerInvocation="35974" standardDeviationMircosecondsPerInvocation="1201"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="322" invocations="265" avgMicrosecondsPerInvocation="1215" maxMicrosecondsPerInvocation="140137" standardDeviationMircosecondsPerInvocation="8687"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1049" invocations="1269" avgMicrosecondsPerInvocation="827" maxMicrosecondsPerInvocation="218689" standardDeviationMircosecondsPerInvocation="6721"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
